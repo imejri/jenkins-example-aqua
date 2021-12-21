@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  environment {
+    AQUA_ROOT_DIR="$WORKSPACE/.aqua"
+    PATH="$WORKSPACE/.aqua/bin:$PATH"
+  }
   stages {
     stage('Verify aqua installation') {
       steps {
