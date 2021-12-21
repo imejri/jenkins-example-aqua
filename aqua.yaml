@@ -1,0 +1,6 @@
+registries:
+- type: standard
+  ref: v0.12.1
+
+packages:
+- name: stedolan/jq@jq-1.6
