@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    label "centos"
+  }
   environment {
     AQUA_ROOT_DIR="$WORKSPACE/.aqua"
     PATH="$WORKSPACE/.aqua/bin:$PATH"
