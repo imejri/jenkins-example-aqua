@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Verify aqua installation') {
       steps {
-        sh 'env | grep GIT_
+        sh 'env | grep GIT_'
         sh 'aqua version'
         sh 'which aqua'
       }
